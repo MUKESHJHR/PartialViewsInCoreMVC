@@ -1,0 +1,30 @@
+﻿@model Product
+
+@{
+    ViewData["Title"] = "Details";
+}
+<div>
+    <h4>Product Details</h4>
+
+    <table class="table">
+        <tr>
+            <th>
+                ProductID
+            </th>
+            <th>
+                Name
+            </th>
+            <th>
+                Category
+            </th>
+            <th>
+                Description
+            </th>
+            <th>
+                Price
+            </th>
+        </tr>
+
+        @await Html.PartialAsync("_ProductDetails",Model)
+    </table>
+</div>
